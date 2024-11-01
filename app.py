@@ -13,5 +13,8 @@ from models import Usuario, Pizza, PDiddy
 db.init_app(app)
 migrate = Migrate(app, db)
 
-from modules.usuarios import bp_usuario
+from modules.usuarios.usuarios import bp_usuario
 app.register_blueprint(bp_usuario, url_prefix='/usuarios')
+
+from modules.pizzas.pizzas import bp_pizzas
+app.register_blueprint(bp_pizzas, url_prefix='/pizzas')

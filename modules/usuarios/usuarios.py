@@ -25,7 +25,7 @@ def save():
         db.session.add(db_usuario)
         db.session.commit()
         flash("Usuário cadastrado com sucesso!!!")
-        return redirect('/')
+        return redirect('/usuarios')
     else:
         flash("Preencha todos os campos!!!")
-        return redirect('/add')
+        return redirect('/usuarios/add')

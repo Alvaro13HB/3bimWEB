@@ -6,8 +6,25 @@
     <link rel="stylesheet" href="{{url_for('static', filename='style/style.css')}}">
     <title>WEB</title>
 </head>
+<header>
+    <nav>
+        <ul>
+            <li>
+                <a href="/usuarios">Usuários</a>
+            </li>
+            <li>
+                <a href="/pizzas">Pizzas</a>
+            </li>
+            <li>
+                <a href="/pdiddy">Pedidos</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 <body>
-    {% block conteudo %}
-    {% endblock %}
+    <main>
+        {% block conteudo %}
+        {% endblock %}
+    </main>
 </body>
 </html>
